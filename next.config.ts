@@ -1,9 +1,9 @@
-import type { NextjsConfig } from "next";
+import type { NextConfig } from "next";
 
-const nextConfig: NextjsConfig = {
-  output: 'export', // 💡 加入這一行，讓網站變成純靜態，部署保證不超時！
+const nextConfig: NextConfig = {
+  output: 'export', // 💡 開啟靜態導出，部署保證不超時！
   images: {
-    unoptimized: true, // 靜態導出需要關閉圖片優化
+    unoptimized: true, // 靜態導出模式下必須關閉圖片優化功能
   },
 };
 
